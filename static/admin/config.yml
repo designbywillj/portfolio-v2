@@ -6,3 +6,15 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'case-studies'
+    label: 'Case Studies'
+    format: 'json'
+    folder: 'assets/content/case-studies'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - name: 'title'
+        label: 'Title'
+        widget: 'string'
