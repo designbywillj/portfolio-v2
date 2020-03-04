@@ -1,0 +1,33 @@
+{
+  "color": "00CE7C",
+  "section": [
+    {
+      "heading": "This is Section One",
+      "content": "## This is a Section\n\nI'm from Central Kentucky, currently living in Nashville, Tennessee. I love working on various design projects, whether it be creating brands or designing sites and apps. I've been designing and playing with code since I was twelve. While I listen to a lot of music, I spend most of my time at my desk working on personal projects and other various projects.\n\n![](/img/visuals_by_impulse_case_study.jpg)\n\nI'm from Central Kentucky, currently living in Nashville, Tennessee. I love working on various design projects, whether it be creating brands or designing sites and apps. I've been designing and playing with code since I was twelve.\n\n![](/img/about_will_johnson.jpg)"
+    },
+    {
+      "content": "## This is a Section\n\nI'm from Central Kentucky, currently living in Nashville, Tennessee. I love working on various design projects, whether it be creating brands or designing sites and apps. I've been designing and playing with code since I was twelve. While I listen to a lot of music, I spend most of my time at my desk working on personal projects and other various projects.\n\n![](/img/visuals_by_impulse_case_study.jpg)\n\nI'm from Central Kentucky, currently living in Nashville, Tennessee. I love working on various design projects, whether it be creating brands or designing sites and apps. I've been designing and playing with code since I was twelve.\n\n![](/img/about_will_johnson.jpg)",
+      "heading": "This is Section One"
+    }
+  ],
+  "for": "Visuals By Impulse",
+  "thumbnail": "/img/visuals_by_impulse_case_study.jpg",
+  "duration": "Winter 2019 — Spring 2020",
+  "role": "I am currently a UX Designer at Visuals by Impulse, a remote-based design studio who has worked with thousands of streamers big and small.",
+  "feature": "/img/visuals_by_impulse_case_study.jpg",
+  "title": "New VBI",
+  "content": [
+    {
+      "heading": "Title One",
+      "paragraph": "I am currently a UX Designer at Visuals by Impulse, a remote-based design studio who has worked with thousands of streamers big and small. I create experiences for VBI's staff, front-facing clients, and anyone who uses VBI's products, whether it be the portal or the new Stream Design Factory app on the Streamlabs OBS app store.",
+      "image": "/img/visuals_by_impulse_case_study.jpg"
+    },
+    {
+      "heading": "",
+      "paragraph": "I am currently a UX Designer at Visuals by Impulse, a remote-based design studio who has worked with thousands of streamers big and small. I create experiences for VBI's staff, front-facing clients, and anyone who uses VBI's products, whether it be the portal or the new Stream Design Factory app on the Streamlabs OBS app store.",
+      "image": ""
+    }
+  ],
+  "description": "What goes here is something about the product that may engage a viewer to interact with the case studies, and is something about the product that may engage a viewer to interact with the case studies.",
+  "category": "Product Design"
+}
