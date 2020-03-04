@@ -6,8 +6,15 @@
       </h1>
     </section>
     <section>
-      <Card />
-      <Card />
+      <Card
+        v-for="caseStudy in caseStudies"
+        :key="caseStudy.title"
+        :title="caseStudy.title"
+        :category="caseStudy.category"
+        :thumbnail="caseStudy.thumbnail"
+        :description="caseStudy.description"
+        :link="'/case-study/' + titleToSlug(caseStudy.title)"
+      />
     </section>
   </article>
 </template>
@@ -16,6 +23,34 @@
 export default {
   components: {
     Card: () => import('@/components/Card')
+  },
+
+  data() {
+    return {
+      caseStudies: []
+    }
+  },
+
+  async asyncData() {
+    const context = await require.context(
+      '~/assets/content/case-study/',
+      false,
+      /\.json$/
+    )
+
+    const caseStudies = await context.keys().map((key) => ({
+      ...context(key),
+      id: key.replace('.json', '').replace('./', '')
+    }))
+    return {
+      caseStudies
+    }
+  },
+
+  methods: {
+    titleToSlug(title) {
+      return title.toLowerCase().replace(/\s/g, '-')
+    }
   },
 
   head() {

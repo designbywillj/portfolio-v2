@@ -1,14 +1,13 @@
 <template>
   <div class="card">
-    <div class="card__thumbnail"></div>
+    <div class="card__thumbnail">
+      <div class="card__thumbnail-color"></div>
+    </div>
     <div class="card__content">
-      <h4>PRODUCT DESIGN</h4>
-      <h2>Visuals By Impulse</h2>
-      <p>
-        What goes here is something about the product that may engage a viewer to interact
-        with the case studies.
-      </p>
-      <nuxt-link to="/" class="card__button">
+      <h4>{{ category }}</h4>
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
+      <nuxt-link :to="link" class="card__button">
         Read Case Study
         <span>
           <img src="/svg/right-arrow.svg" alt="" />
@@ -20,8 +19,31 @@
 
 <script>
 export default {
-  name: 'Header',
-  components: {}
+  name: 'Card',
+  components: {},
+  props: {
+    title: {
+      type: String,
+      default: 'Case Study Title'
+    },
+    category: {
+      type: String,
+      default: 'Category'
+    },
+    thumbnail: {
+      type: String,
+      default: null
+    },
+    description: {
+      type: String,
+      default:
+        'What goes here is something about the product that may engage a viewer to interact with the case studies.'
+    },
+    link: {
+      type: String,
+      default: '/'
+    }
+  }
 }
 </script>
 
@@ -46,8 +68,7 @@ export default {
     transform-style: preserve-3d;
     transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
 
-    &::after {
-      content: '';
+    &-color {
       width: 100%;
       height: 100%;
       position: absolute;
@@ -65,10 +86,10 @@ export default {
 
     &:hover {
       transform: translate3d(-0.75rem, -0.75rem, 0) rotate(2deg);
+    }
 
-      &::after {
-        transform: translate3d(1.5rem, 1.5rem, -1em) rotate(-4deg);
-      }
+    &:hover > &-color {
+      transform: translate3d(1.5rem, 1.5rem, -1em) rotate(-4deg);
     }
   }
 

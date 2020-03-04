@@ -44,7 +44,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/markdownit'
   ],
   /*
    ** Axios module configuration
@@ -59,5 +60,17 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  generate: {
+    routes() {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./assets/content/case-study').map((file) => {
+        return {
+          route: `/case-study/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/case-study/${file}`)
+        }
+      })
+    }
   }
 }
