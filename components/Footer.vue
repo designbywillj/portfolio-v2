@@ -20,7 +20,7 @@ export default {
   padding: 0 4rem 4rem;
 
   &__content {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

@@ -17,5 +17,6 @@
 
 .logo {
   fill: $color--black;
+  height: 2rem;
 }
 </style>

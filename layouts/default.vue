@@ -26,7 +26,7 @@ main {
 }
 
 article {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 

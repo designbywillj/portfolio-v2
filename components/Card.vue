@@ -82,6 +82,7 @@ export default {
     background-position: 50%;
     transform-style: preserve-3d;
     transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
+    perspective: 600px;
 
     &-color {
       width: 100%;
@@ -90,16 +91,16 @@ export default {
       top: 4rem;
       left: 4rem;
       z-index: -1;
-      transform: translateZ(-1em);
+      transform: translate3d(1.5rem, 1.5rem, -2.5rem);
       transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
     }
 
     &:hover {
-      transform: translate3d(-0.75rem, -0.75rem, 0) rotate(2deg);
+      transform: translate3d(-0.75rem, -0.75rem, 0) rotate3d(6, 1, -3, 8deg);
     }
 
     &:hover > &-color {
-      transform: translate3d(1.5rem, 1.5rem, -1em) rotate(-4deg);
+      transform: translate3d(2rem, 2rem, -5rem) rotate3d(-0.5, -1, 1.5, 8deg);
     }
   }
 
