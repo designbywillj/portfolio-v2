@@ -17,12 +17,12 @@ h4 {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   line-height: 1.25;
 }
 
-h1, h2 {
+h1,
+h2 {
   letter-spacing: -0.022em;
 }
 
@@ -30,11 +30,6 @@ h1,
 h2,
 p {
   margin-bottom: 2rem;
-}
-
-h3,
-p {
-  line-height: 1.75;
 }
 
 h1 {
@@ -56,12 +51,14 @@ h4 {
   text-transform: uppercase;
 }
 
-h4, p {
+h4,
+p {
   letter-spacing: -0.011em;
 }
 
 p {
   color: $color--gray;
+  line-height: 2;
 
   &:last-child {
     margin-bottom: 0;

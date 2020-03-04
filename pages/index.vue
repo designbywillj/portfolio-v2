@@ -13,6 +13,7 @@
         :category="caseStudy.category"
         :thumbnail="caseStudy.thumbnail"
         :description="caseStudy.description"
+        :color="caseStudy.color"
         :link="'/case-study/' + titleToSlug(caseStudy.title)"
       />
     </section>

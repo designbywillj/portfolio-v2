@@ -1,11 +1,22 @@
 <template>
   <div class="card">
-    <div class="card__thumbnail">
-      <div class="card__thumbnail-color"></div>
-    </div>
+    <nuxt-link :to="link" class="card__thumbnail">
+      <div
+        :style="{
+          background: `linear-gradient(
+        180deg,
+        #${color}00 0%,
+        #${color}40 100%
+      )`
+        }"
+        class="card__thumbnail-color"
+      ></div>
+    </nuxt-link>
     <div class="card__content">
       <h4>{{ category }}</h4>
-      <h2>{{ title }}</h2>
+      <nuxt-link :to="link">
+        <h2>{{ title }}</h2>
+      </nuxt-link>
       <p>{{ description }}</p>
       <nuxt-link :to="link" class="card__button">
         Read Case Study
@@ -38,6 +49,10 @@ export default {
       type: String,
       default:
         'What goes here is something about the product that may engage a viewer to interact with the case studies.'
+    },
+    color: {
+      type: String,
+      default: '000000'
     },
     link: {
       type: String,
@@ -76,11 +91,6 @@ export default {
       left: 4rem;
       z-index: -1;
       transform: translateZ(-1em);
-      background: linear-gradient(
-        180deg,
-        rgba(0, 206, 124, 0) 0%,
-        rgba(0, 206, 124, 0.25) 100%
-      );
       transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
     }
 

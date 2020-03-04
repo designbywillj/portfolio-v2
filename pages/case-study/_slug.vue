@@ -93,6 +93,9 @@ export default {
   &__details {
     flex: 0 1 40%;
     padding-left: 4rem;
+    position: sticky;
+    top: 4rem;
+    align-self: flex-start;
 
     p {
       margin-bottom: 4rem;
@@ -102,6 +105,7 @@ export default {
   &__section {
     img {
       width: 100%;
+      margin: 2rem 0;
     }
   }
 }

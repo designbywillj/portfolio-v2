@@ -22,7 +22,7 @@ collections:
       - name: category
         label: Category
         widget: select
-        options: ['Product Design', 'Brand Identity']
+        options: ['Product Design', 'Brand Identity', 'Motion Design']
 
       - name: thumbnail
         label: Thumbnail
@@ -53,14 +53,13 @@ collections:
       - name: color
         label: Color
         widget: string
+        hint: 'Use a HEX code that does not contain #'
+        pattern: ['/^([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/igm', 'Must be a valid HEX code, without #']
 
       - name: section
         label: Section
         widget: list
         fields:
-          - name: heading
-            label: Heading
-            widget: string
           - name: content
             label: Content
             widget: markdown
