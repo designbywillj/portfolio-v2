@@ -17,47 +17,56 @@ collections:
     fields:
       - name: title
         label: Title
+        hint: 'Name of the project.'
         widget: string
 
       - name: category
         label: Category
         widget: select
+        hint: 'What type of project it is.'
         options: ['Product Design', 'Brand Identity', 'Motion Design']
 
       - name: thumbnail
         label: Thumbnail
         widget: image
+        hint: 'Thumbnail image shown on homepage.'
         allow_multiple: false
 
       - name: feature
         label: Feature
         widget: image
+        hint: 'Main image shown in individual page.'
         allow_multiple: false
 
       - name: description
         label: Description
         widget: string
+        hint: 'Very brief summary of the project.'
         
       - name: duration
         label: Duration
         widget: string
+        hint: 'How long the project took to complete.'
 
       - name: role
         label: Role
         widget: string
+        hint: 'What you did for the project.'
 
       - name: for
         label: For
         widget: string
+        hint: 'Who the project was for.'
 
       - name: color
         label: Color
         widget: string
-        hint: 'Use a HEX code that does not contain #'
-        pattern: ['/^([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/igm', 'Must be a valid HEX code, without #']
+        hint: 'Use a HEX code that does not contain #.'
+        pattern: ['/^([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/igm', 'Must be a valid HEX code, without #.']
 
       - name: section
         label: Section
+        hint: 'Section of the case study highlighting a specific topic of the project.'
         widget: list
         fields:
           - name: content
