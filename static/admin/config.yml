@@ -49,3 +49,21 @@ collections:
       - name: for
         label: For
         widget: string
+
+      - name: color
+        label: Color
+        widget: string
+
+      - name: content
+        label: Content
+        widget: list
+        fields:
+          - name: heading
+            label: Heading
+            widget: string
+          - name: paragraph
+            label: Paragraph
+            widget: string
+          - name: image
+            label: Image
+            widget: image
