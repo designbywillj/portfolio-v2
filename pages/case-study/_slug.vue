@@ -69,36 +69,63 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 .case-study {
   &__title {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: $breakpoint--md) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__feature {
     width: 100%;
-    height: 30rem;
+    height: 12rem;
     background-size: cover;
     background-position: center;
+
+    @media (min-width: $breakpoint--md) {
+      height: 30rem;
+    }
   }
 
   &__body {
     display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $breakpoint--md) {
+      flex-direction: row;
+    }
   }
 
   &__content {
-    flex: 0 1 60%;
-    padding-right: 4rem;
+    flex: 0 0 100%;
+
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 60%;
+      padding-right: 4rem;
+    }
   }
 
   &__details {
-    flex: 0 1 40%;
-    padding-left: 4rem;
-    position: sticky;
-    top: 4rem;
-    align-self: flex-start;
+    flex: 0 0 100%;
+
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 40%;
+      padding-left: 4rem;
+      position: sticky;
+      top: 4rem;
+      align-self: flex-start;
+    }
 
     p {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      @media (min-width: $breakpoint--md) {
+        margin-bottom: 4rem;
+      }
     }
   }
 

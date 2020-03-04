@@ -32,7 +32,11 @@ html {
 }
 
 section {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: $breakpoint--md) {
+    margin-bottom: 8rem;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -50,10 +54,13 @@ a {
 }
 
 hr {
-  // max-width: 12rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   border-color: rgba(0, 0, 0, 0.15);
   border-top: 0;
   border-right: 0;
   border-left: 0;
+
+  @media (min-width: $breakpoint--md) {
+    margin-bottom: 8rem;
+  }
 }

@@ -14,10 +14,17 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 .footer {
   width: 100%;
-  margin-top: 12rem;
-  padding: 0 4rem 4rem;
+  margin-top: 4rem;
+  padding: 0 2rem 2rem;
+
+  @media (min-width: $breakpoint--md) {
+    margin-top: 12rem;
+    padding: 0 4rem 4rem;
+  }
 
   &__content {
     max-width: 75rem;

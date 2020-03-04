@@ -34,12 +34,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
 @import '@/assets/scss/colors';
 
 .header {
   width: 100%;
-  margin-bottom: 8rem;
-  padding: 4rem 4rem 0;
+  margin-bottom: 4rem;
+  padding: 2rem 2rem 0;
+
+  @media (min-width: $breakpoint--md) {
+    margin-bottom: 8rem;
+    padding: 4rem 4rem 0;
+  }
 
   nav {
     width: 100%;
@@ -59,12 +65,16 @@ export default {
     list-style-type: none;
 
     &-item {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
       padding: 0;
       color: $color--gray;
       line-height: 2rem;
       text-decoration: none;
       transition: color 0.25s ease-in-out;
+
+      @media (min-width: $breakpoint--md) {
+        margin-left: 2rem;
+      }
 
       &.nuxt-link-exact-active {
         color: $color--black;

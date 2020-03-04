@@ -71,12 +71,23 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 .about {
   display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $breakpoint--md) {
+    flex-direction: row;
+  }
 
   &__content {
-    flex: 0 1 60%;
-    padding-right: 4rem;
+    flex: 0 0 100%;
+
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 60%;
+      padding-right: 4rem;
+    }
   }
 
   &__section {
@@ -84,8 +95,14 @@ export default {
   }
 
   &__feature {
-    flex: 0 1 40%;
-    padding-left: 4rem;
+    flex: 0 0 100%;
+    margin-bottom: 4rem;
+
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 40%;
+      margin-bottom: 0;
+      padding-left: 4rem;
+    }
   }
 
   &__img {

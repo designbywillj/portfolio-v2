@@ -63,19 +63,26 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
 @import '@/assets/scss/colors';
 
 .card {
   display: flex;
-  padding-bottom: 12rem;
+  padding-bottom: 6rem;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint--md) {
+    padding-bottom: 12rem;
+    flex-direction: row;
+  }
 
   &:last-child {
     padding-bottom: 4rem;
   }
 
   &__thumbnail {
-    flex: 0 1 50%;
-    padding-top: 37.5%;
+    flex: 0 0 100%;
+    padding-top: 75%;
     position: relative;
     background-image: url('/img/visuals_by_impulse_case_study.jpg');
     background-size: cover;
@@ -84,15 +91,24 @@ export default {
     transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
     perspective: 600px;
 
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 50%;
+      padding-top: 37.5%;
+    }
+
     &-color {
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 4rem;
-      left: 4rem;
+      top: 0;
+      left: 0;
       z-index: -1;
-      transform: translate3d(1.5rem, 1.5rem, -2.5rem);
+      transform: translate3d(1rem, 1rem, -1rem);
       transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
+
+      @media (min-width: $breakpoint--md) {
+        transform: translate3d(4rem, 4rem, -2.5rem);
+      }
     }
 
     &:hover {
@@ -105,12 +121,21 @@ export default {
   }
 
   &__content {
-    flex: 0 1 50%;
-    padding-top: 4rem;
-    padding-left: 8rem;
+    flex: 0 0 100%;
+    padding-top: 3rem;
+
+    @media (min-width: $breakpoint--md) {
+      flex: 0 1 50%;
+      padding-top: 4rem;
+      padding-left: 8rem;
+    }
 
     p {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      @media (min-width: $breakpoint--md) {
+        margin-bottom: 4rem;
+      }
     }
   }
 

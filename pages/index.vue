@@ -71,7 +71,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 .hero {
-  margin-bottom: 12rem;
+  margin-bottom: 6rem;
+
+  @media (min-width: $breakpoint--md) {
+    margin-bottom: 12rem;
+  }
 }
 </style>

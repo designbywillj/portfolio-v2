@@ -20,9 +20,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/variables';
+
 main {
-  padding: 0 4rem;
-  perspective: 200vw;
+  padding: 0 2rem;
+
+  @media (min-width: $breakpoint--md) {
+    padding: 0 4rem;
+  }
 }
 
 article {
