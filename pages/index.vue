@@ -56,7 +56,7 @@ export default {
 
   head() {
     return {
-      title: 'Will Johnson - Graphic, Motion, and UX Designer',
+      title: 'Will Johnson - Graphic, Motion, & UX Designer',
       meta: [
         {
           hid: 'description',

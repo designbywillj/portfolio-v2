@@ -48,7 +48,7 @@ export default {
 
   head() {
     return {
-      title: this.blogPost.title + ' | Will Johnson. Graphic, Motion, and UX Designer',
+      title: this.blogPost.title + ' | Will Johnson. Graphic, Motion, & UX Designer',
       meta: [
         {
           hid: 'description',
