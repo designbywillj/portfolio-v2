@@ -47,6 +47,9 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

@@ -16,13 +16,12 @@
         </section>
 
         <section
-          v-for="(item, index) in blogPost.content"
+          v-for="(item, index) in blogPost.section"
           :key="index"
           class="case-study__section"
         >
           <h2 v-if="item.heading">{{ item.heading }}</h2>
-          <p v-if="item.paragraph">{{ item.paragraph }}</p>
-          <img v-if="item.image" :src="item.image" />
+          <div v-if="item.content" v-html="$md.render(item.content)" />
         </section>
       </div>
       <aside class="case-study__details">
