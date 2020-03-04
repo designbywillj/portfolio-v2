@@ -45,9 +45,10 @@ export default {
       blogPost: {}
     }
   },
+
   head() {
     return {
-      title: 'Case Study',
+      title: this.blogPost.title + ' | Will Johnson. Graphic, Motion, and UX Designer',
       meta: [
         {
           hid: 'description',
