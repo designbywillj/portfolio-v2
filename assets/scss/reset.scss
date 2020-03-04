@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body,
+button,
+svg {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Inter', sans-serif;
+  color: $color--black;
+  background-color: $color--white;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  margin-bottom: 8rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $color--black;
+  text-decoration: none;
+}
+
+::selection {
+  color: $color--white;
+  background: $color--black;
+}
+
+hr {
+  // max-width: 12rem;
+  margin-bottom: 8rem;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
