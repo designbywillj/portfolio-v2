@@ -40,7 +40,7 @@ export default {
 .header {
   width: 100%;
   margin-bottom: 4rem;
-  padding: 1.5rem 1.5rem 0;
+  padding: 2rem 2rem 0;
 
   @media (min-width: $breakpoint--md) {
     margin-bottom: 8rem;

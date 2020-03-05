@@ -107,8 +107,6 @@ export default {
 
   &__img {
     width: 100%;
-    position: sticky;
-    top: 4rem;
   }
 }
 </style>

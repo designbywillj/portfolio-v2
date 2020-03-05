@@ -23,7 +23,7 @@ export default {
 @import '@/assets/scss/variables';
 
 main {
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 
   @media (min-width: $breakpoint--md) {
     padding: 0 4rem;
