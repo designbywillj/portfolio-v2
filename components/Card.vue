@@ -103,20 +103,23 @@ export default {
       top: 0;
       left: 0;
       z-index: -1;
-      transform: translate3d(1rem, 1rem, -1rem);
+      display: none;
       transition: transform 0.25s cubic-bezier(0, 0, 0.5, 1);
 
       @media (min-width: $breakpoint--md) {
-        transform: translate3d(4rem, 4rem, -2.5rem);
+        display: block;
+        transform: translate3d(4rem, 4rem, -0.25rem);
       }
     }
 
-    &:hover {
-      transform: translate3d(-0.75rem, -0.75rem, 0) rotate3d(6, 1, -3, 8deg);
-    }
+    @media (min-width: $breakpoint--md) {
+      &:hover {
+        transform: translate3d(-1rem, -1rem, 0) rotate(-4deg);
+      }
 
-    &:hover > &-color {
-      transform: translate3d(2rem, 2rem, -5rem) rotate3d(-0.5, -1, 1.5, 8deg);
+      &:hover > &-color {
+        transform: translate3d(6rem, 6rem, -0.25rem) rotate(6deg);
+      }
     }
   }
 
