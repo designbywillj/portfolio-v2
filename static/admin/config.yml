@@ -62,7 +62,6 @@ collections:
         label: Color
         widget: string
         hint: 'Use a HEX code that does not contain #.'
-        pattern: ['/^([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/igm', 'Must be a valid HEX code, without #.']
 
       - name: section
         label: Section
