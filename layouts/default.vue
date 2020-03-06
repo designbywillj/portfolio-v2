@@ -1,5 +1,13 @@
 <template>
   <div>
+    <transition name="splash" mode="out-in">
+      <div v-if="isLoading" class="splash">
+        <client-only>
+          <Lottie :loop="false" :keep="true" @complete="onSplashComplete" name="splash" />
+        </client-only>
+      </div>
+    </transition>
+
     <Header />
     <main>
       <nuxt />
@@ -9,10 +17,29 @@
 </template>
 
 <script>
+import { toggleDocumentOverflow } from '@/util'
+
 export default {
   components: {
+    Lottie: () => import('@/components/Lottie'),
     Header: () => import('@/components/Header'),
     Footer: () => import('@/components/Footer')
+  },
+
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+
+  mounted() {
+    toggleDocumentOverflow(this.isLoading)
+  },
+
+  methods: {
+    onSplashComplete() {
+      toggleDocumentOverflow((this.isLoading = false))
+    }
   },
 
   pageTransition: 'page'
@@ -21,6 +48,45 @@ export default {
 
 <style lang="scss">
 @import '@/assets/scss/variables';
+@import '@/assets/scss/colors';
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2rem;
+  background-color: $color--white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  & .lottie {
+    transform: scale(0.25);
+  }
+
+  &-leave-active {
+    transition: opacity 0.5s cubic-bezier(0.3, 0, 0.7, 0);
+    & .lottie {
+      transition: transform 0.5s cubic-bezier(0.3, 0, 0.7, 0);
+    }
+  }
+  &-leave {
+    opacity: 1;
+    & .lottie {
+      transform: scale(0.25);
+    }
+  }
+  &-leave-to {
+    opacity: 0;
+    & .lottie {
+      transform: scale(1);
+    }
+  }
+}
 
 main {
   padding: 0 2rem;
