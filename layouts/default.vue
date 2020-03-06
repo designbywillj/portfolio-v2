@@ -56,7 +56,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-bottom: 2rem;
+  padding-bottom: 8vh;
   background-color: $color--white;
   z-index: 9999;
   display: flex;
