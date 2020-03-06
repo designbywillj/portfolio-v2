@@ -69,9 +69,9 @@ export default {
   }
 
   &-leave-active {
-    transition: opacity 0.5s cubic-bezier(0.3, 0, 0.7, 0);
+    transition: opacity 0.5s cubic-bezier(0.8, 0, 1, 1);
     & .lottie {
-      transition: transform 0.5s cubic-bezier(0.3, 0, 0.7, 0);
+      transition: transform 0.5s cubic-bezier(0.8, 0, 1, 1);
     }
   }
   &-leave {
