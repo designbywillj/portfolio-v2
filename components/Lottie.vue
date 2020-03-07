@@ -57,6 +57,7 @@ export default {
 .lottie {
   flex: 0 0 64rem;
   position: relative;
+  transform-style: preserve-3d;
 
   &__wrapper {
     width: 100%;
