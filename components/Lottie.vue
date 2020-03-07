@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss">
 .lottie {
-  width: 24rem;
+  width: 54rem;
   position: relative;
 
   &__wrapper {
