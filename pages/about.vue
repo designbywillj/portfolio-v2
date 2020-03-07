@@ -48,7 +48,10 @@
       </section>
     </div>
     <aside class="about__feature">
-      <img src="/img/about_will_johnson.jpg" class="about__img" />
+      <img
+        :src="require('~/assets/img/about_will_johnson.jpg?lqip')"
+        class="about__img"
+      />
     </aside>
   </article>
 </template>
