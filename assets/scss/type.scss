@@ -75,4 +75,19 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+
+  a {
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      width: 100%;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+    }
+  }
 }
