@@ -66,8 +66,8 @@
           and consumers. Some of these projects include the
           <nuxt-link to="/case-study/vbi-crm-tool" target="_blank">VBI CRM Tool</nuxt-link
           >,
-          <nuxt-link to="/case-study/vbi-website" target="_blank">VBI's Website</nuxt-link
-          >, and the Stream Design Factory.
+          <nuxt-link to="/case-study/vbi-website" target="_blank">VBI Website</nuxt-link>,
+          and the Stream Design Factory.
         </p>
         <p>
           My responsibilities at VBI include UX research and design and frontend
