@@ -158,5 +158,31 @@ export default {
       }
     }
   }
+
+  &:nth-child(even) {
+    @media (min-width: $breakpoint--md) {
+      flex-direction: row-reverse;
+
+      .card__content {
+        padding-right: 8rem;
+        padding-left: 0;
+        text-align: right;
+      }
+
+      .card__thumbnail {
+        &-color {
+          transform: translate3d(-4rem, 4rem, -0.25rem);
+        }
+
+        &:hover {
+          transform: translate3d(1rem, -1rem, 0) rotate(4deg);
+        }
+
+        &:hover > .card__thumbnail-color {
+          transform: translate3d(-6rem, 6rem, -0.25rem) rotate(-6deg);
+        }
+      }
+    }
+  }
 }
 </style>
