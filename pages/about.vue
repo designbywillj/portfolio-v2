@@ -64,10 +64,11 @@
           (VBI), a remote-based design studio who has worked with thousands of streamers
           and personalities. I create experiences for VBI's staff, front-facing clients,
           and consumers. Some of these projects include the
-          <nuxt-link to="/case-study/vbi-crm-tool" target="_blank">VBI CRM Tool</nuxt-link
-          >,
-          <nuxt-link to="/case-study/vbi-website" target="_blank">VBI Website</nuxt-link>,
-          and the Stream Design Factory.
+          <a href="/case-study/vbi-crm-tool" target="_blank">VBI CRM Tool</a>,
+          <a href="/case-study/vbi-website" target="_blank">VBI Website</a>, and the
+          <a href="https://platform.streamlabs.com/app/details/dfdae64f62" target="_blank"
+            >Stream Design Factory</a
+          >.
         </p>
         <p>
           My responsibilities at VBI include UX research and design and frontend
