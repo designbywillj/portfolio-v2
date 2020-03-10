@@ -60,10 +60,10 @@
         </p>
         <p>
           I am currently a Creative Engineer at
-          <a href="https://visualsbyimpulse.com" target="_blank">Visuals by Impulse</a>, a
-          remote-based design studio who has worked with thousands of streamers and
-          personalities. I create experiences for VBI's staff, front-facing clients, and
-          consumers. Some of these projects include the
+          <a href="https://visualsbyimpulse.com" target="_blank">Visuals By Impulse</a>
+          (VBI), a remote-based design studio who has worked with thousands of streamers
+          and personalities. I create experiences for VBI's staff, front-facing clients,
+          and consumers. Some of these projects include the
           <nuxt-link to="/case-study/vbi-crm-tool" target="_blank">VBI CRM Tool</nuxt-link
           >,
           <nuxt-link to="/case-study/vbi-website" target="_blank">VBI's Website</nuxt-link
