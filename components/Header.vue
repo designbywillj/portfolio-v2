@@ -57,6 +57,7 @@ export default {
 
   &__logo {
     height: 2rem;
+    display: block;
   }
 
   &__nav {
@@ -65,6 +66,7 @@ export default {
     list-style-type: none;
 
     &-item {
+      display: block;
       margin-left: 1.5rem;
       padding: 0;
       color: $color--gray;
