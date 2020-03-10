@@ -1,6 +1,10 @@
 <template>
   <div class="card">
-    <nuxt-link :to="link" class="card__thumbnail">
+    <nuxt-link
+      :to="link"
+      :style="{ backgroundImage: `url(${thumbnail})` }"
+      class="card__thumbnail"
+    >
       <div
         :style="{
           background: `linear-gradient(
@@ -84,7 +88,6 @@ export default {
     flex: 0 0 100%;
     padding-top: 75%;
     position: relative;
-    background-image: url('/img/visuals_by_impulse_case_study.jpg');
     background-size: cover;
     background-position: 50%;
     transform-style: preserve-3d;
