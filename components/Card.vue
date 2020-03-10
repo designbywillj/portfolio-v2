@@ -75,13 +75,17 @@ export default {
   padding-bottom: 6rem;
   flex-direction: column;
 
+  &:last-child {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $breakpoint--md) {
     padding-bottom: 12rem;
     flex-direction: row;
-  }
 
-  &:last-child {
-    padding-bottom: 4rem;
+    &:last-child {
+      padding-bottom: 4rem;
+    }
   }
 
   &__thumbnail {

@@ -1,8 +1,8 @@
 <template>
   <article class="case-study">
-    <section>
+    <section class="case-study__title">
       <h4>{{ blogPost.category }}</h4>
-      <h1 class="case-study__title">{{ blogPost.title }}</h1>
+      <h1>{{ blogPost.title }}</h1>
       <div
         :style="{ 'background-image': `url(${blogPost.feature})` }"
         class="case-study__feature"
@@ -73,21 +73,23 @@ export default {
 
 .case-study {
   &__title {
-    margin-bottom: 2rem;
+    h1 {
+      margin-bottom: 2rem;
 
-    @media (min-width: $breakpoint--md) {
-      margin-bottom: 4rem;
+      @media (min-width: $breakpoint--md) {
+        margin-bottom: 4rem;
+      }
     }
   }
 
   &__feature {
     width: 100%;
-    height: 12rem;
+    height: 20rem;
     background-size: cover;
     background-position: center;
 
     @media (min-width: $breakpoint--md) {
-      height: 30rem;
+      height: 40rem;
     }
   }
 

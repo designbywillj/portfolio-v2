@@ -58,7 +58,7 @@ export default {
 
 .footer {
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 6rem;
   padding: 0 2rem 2rem;
 
   @media (min-width: $breakpoint--md) {
