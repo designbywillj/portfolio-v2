@@ -1,10 +1,15 @@
 {
   "color": "3999E5",
+  "section": [
+    {
+      "content": "Kickstarting his career doing concert visuals and general abstract 3D work using Blender, Ducky 3D is introducing Blender as a feasible MoGraph tool through popular YouTube tutorials and other social media outlets."
+    }
+  ],
   "for": "Ducky 3D (Nathan Duck)",
   "thumbnail": "/img/dfgdfg.png",
   "duration": "December 2019 — February 2020",
-  "role": "UX design, UI design, product design, design system development and management, frontend development",
-  "feature": "/img/dfgdfg.png",
+  "role": "Developing a new identity, site, and social media assets for Ducky 3D.",
+  "feature": "/img/ducky3d_feature.jpg",
   "title": "Ducky 3D",
   "description": "Re-imagining the brand for a known 3D artist, who creates tutorials and artwork primarily using Blender.",
   "category": "Brand Identity"
