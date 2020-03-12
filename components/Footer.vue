@@ -67,7 +67,7 @@ export default {
   }
 
   &__content {
-    max-width: 90rem;
+    max-width: 80rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
