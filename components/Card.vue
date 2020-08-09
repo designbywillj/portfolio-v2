@@ -150,6 +150,7 @@ export default {
   }
 
   &__button {
+    font-size: 1.25rem;
     line-height: 3rem;
     font-weight: 600;
     display: inline-block;

@@ -70,6 +70,7 @@ export default {
       margin-left: 1.5rem;
       padding: 0;
       color: $color--gray;
+      font-size: 1.25rem;
       line-height: 2rem;
       text-decoration: none;
       transition: color 0.25s ease-in-out;

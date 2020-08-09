@@ -82,6 +82,7 @@ export default {
   &__email {
     margin-bottom: 1rem;
     font-weight: 600;
+    font-size: 1.25rem;
 
     @media (min-width: $breakpoint--md) {
       margin-bottom: 0;
