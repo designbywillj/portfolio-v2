@@ -12,7 +12,7 @@
     <div class="case-study__body">
       <div class="case-study__content">
         <section>
-          <h3>{{ blogPost.description }}</h3>
+          <h2>{{ blogPost.description }}</h2>
         </section>
 
         <section
