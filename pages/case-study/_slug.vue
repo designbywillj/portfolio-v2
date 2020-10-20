@@ -11,8 +11,19 @@
 
     <div class="case-study__body">
       <div class="case-study__content">
-        <section>
+        <section class="case-study__section">
           <h2>{{ blogPost.description }}</h2>
+        </section>
+
+        <section class="case-study__details">
+          <h4>Duration</h4>
+          <p>{{ blogPost.duration }}</p>
+
+          <h4>Role</h4>
+          <p>{{ blogPost.role }}</p>
+
+          <h4>For</h4>
+          <p>{{ blogPost.for }}</p>
         </section>
 
         <section
@@ -24,16 +35,6 @@
           <div v-if="item.content" v-html="$md.render(item.content)" />
         </section>
       </div>
-      <aside class="case-study__details">
-        <h4>Duration</h4>
-        <p>{{ blogPost.duration }}</p>
-
-        <h4>Role</h4>
-        <p>{{ blogPost.role }}</p>
-
-        <h4>For</h4>
-        <p>{{ blogPost.for }}</p>
-      </aside>
     </div>
   </article>
 </template>
@@ -95,7 +96,7 @@ export default {
 
   &__body {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
 
     @media (min-width: $breakpoint--md) {
       flex-direction: row;
@@ -104,11 +105,6 @@ export default {
 
   &__content {
     flex: 0 0 100%;
-
-    @media (min-width: $breakpoint--md) {
-      flex: 0 1 60%;
-      padding-right: 4rem;
-    }
   }
 
   &__details {
@@ -116,22 +112,29 @@ export default {
 
     @media (min-width: $breakpoint--md) {
       flex: 0 1 40%;
-      padding-left: 4rem;
-      position: sticky;
-      top: 4rem;
       align-self: flex-start;
     }
 
     p {
       margin-bottom: 2rem;
+    }
 
-      @media (min-width: $breakpoint--md) {
-        margin-bottom: 4rem;
-      }
+    h4,
+    p {
+      max-width: 800px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
   &__section {
+    h2,
+    p {
+      max-width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     img {
       width: 100%;
       margin: 2rem 0;

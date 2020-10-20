@@ -1,7 +1,7 @@
 <template>
   <article>
     <section class="hero">
-      <h1>
+      <h1 class="hero__h1">
         Will Johnson &mdash; creating impactful brands and products for the digital world.
       </h1>
     </section>
@@ -78,6 +78,9 @@ export default {
 
   @media (min-width: $breakpoint--md) {
     margin-bottom: 12rem;
+  }
+
+  &__h1 {
   }
 }
 </style>

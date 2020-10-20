@@ -89,7 +89,7 @@ export default {
 }
 
 main {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 
   @media (min-width: $breakpoint--md) {
     padding: 0 4rem;
