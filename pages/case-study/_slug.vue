@@ -137,7 +137,10 @@ export default {
 
     img {
       width: 100%;
-      margin-bottom: 2rem;
+
+      @media (min-width: $breakpoint--md) {
+        margin-bottom: 2rem;
+      }
     }
 
     p:last-child {
