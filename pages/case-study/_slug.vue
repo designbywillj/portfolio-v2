@@ -137,7 +137,13 @@ export default {
 
     img {
       width: 100%;
-      margin: 2rem 0;
+      margin-bottom: 2rem;
+    }
+
+    p:last-child {
+      img {
+        margin-bottom: 0;
+      }
     }
   }
 }
