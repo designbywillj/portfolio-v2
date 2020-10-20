@@ -72,6 +72,7 @@ export default {
       color: $color--gray;
       font-size: 1.25rem;
       line-height: 2rem;
+      letter-spacing: -0.02em;
       text-decoration: none;
       transition: color 0.25s ease-in-out;
 
